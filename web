@@ -30,7 +30,7 @@ mkdir -p /var/www/html/
 echo -e "\n[+] Mendownload file web.zip dari GitHub..."
 cd /tmp
 rm -rf web web.zip # Bersihkan sisa unduhan sebelumnya jika ada
-wget -O web.zip "https://raw.githubusercontent.com/hokagelegend9999/alpha.v2/main/web.zip"
+wget -O web.zip "https://raw.githubusercontent.com/gyrogerald/alpha.v2/main/web.zip"
 
 echo -e "[+] Mengekstrak file web.zip..."
 mkdir -p /tmp/web

@@ -3,7 +3,7 @@
 ## install web :
 
 ```
-wget https://github.com/hokagelegend9999/alpha.v2/raw/refs/heads/main/web
+wget https://github.com/gyrogerald/alpha.v2/raw/refs/heads/main/web
 chmod +x web
 ./web
 ```

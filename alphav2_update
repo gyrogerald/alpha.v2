@@ -61,7 +61,7 @@ function cleanup() {
     echo -e "\n${GREEN}Installer files removed successfully!${NC}"
     
     echo -e "\n${BLUE}[2/2] Updating system...${NC}"
-    (cd && wget https://raw.githubusercontent.com/hokagelegend9999/alpha.v2/refs/heads/main/alphav2_update -q && \
+    (cd && wget https://raw.githubusercontent.com/gyrogerald/alpha.v2/refs/heads/main/alphav2_update -q && \
      chmod +x alphav2_update && ./alphav2_update) > /dev/null 2>&1 &
     animate $!
     echo -e "\n${GREEN}System updated successfully!${NC}"
@@ -83,7 +83,7 @@ function install_vpn() {
     
     # Install SSTP
     echo -e "${YELLOW}[1/3] Installing SSTP VPN...${NC}"
-    (wget https://raw.githubusercontent.com/hokagelegend9999/vpn/refs/heads/main/debian-installer-sstp.sh -q && \
+    (wget https://raw.githubusercontent.com/gyrogerald/vpn/refs/heads/main/debian-installer-sstp.sh -q && \
      chmod +x debian-installer-sstp.sh && \
      sudo ./debian-installer-sstp.sh) > /dev/null 2>&1 &
     animate $!
@@ -98,7 +98,7 @@ function install_vpn() {
     # Install VPN menu
     echo -e "\n${YELLOW}[3/3] Installing Hokage VPN Menu (SSTP+PPTP+L2TP)...${NC}"
     (rm -f vpn && \
-     wget https://raw.githubusercontent.com/hokagelegend9999/vpn/refs/heads/main/vpn -q && \
+     wget https://raw.githubusercontent.com/gyrogerald/vpn/refs/heads/main/vpn -q && \
      sudo chmod +x vpn) > /dev/null 2>&1 &
     animate $!
     echo -e "\n${GREEN}VPN Menu installed successfully!${NC}"
