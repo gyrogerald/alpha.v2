@@ -55,7 +55,7 @@ chattr +i /etc/resolv.conf
 mkdir -p /etc/slowdns
 chmod 777 /etc/slowdns
 
-REPO="https://raw.githubusercontent.com/hokagelegend9999/alpha.v2/refs/heads/main/slowdns"
+REPO="https://raw.githubusercontent.com/gyrogerald/alpha.v2/refs/heads/main/slowdns"
 wget -q -O /etc/slowdns/server.key "${REPO}/server.key"
 wget -q -O /etc/slowdns/server.pub "${REPO}/server.pub"
 wget -q -O /etc/slowdns/sldns-server "${REPO}/sldns-server"
@@ -105,7 +105,7 @@ systemctl restart client-sldns server-sldns
 clear
 # 8. Kirim Notifikasi ke Bot Telegram (SINKRONISASI)
 if [[ -n "$AUTO_CHATID" ]]; then
-    TOKEN="8401742770:AAFs81f2dBEfAIgr9uq2i_96ryclSG95ue8"
+    TOKEN="1834662408:AAGwY4mi7YPTCcoeHXapVI2f6p1skJ4pBlE"
     URL="https://api.telegram.org/bot$TOKEN/sendMessage"
     
     TEXT="<b>✅ SLOWDNS INSTALLED SUCCESSFULLY</b>%0A"
