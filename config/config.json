@@ -1,7 +1,7 @@
 {
   "log": {
-    "loglevel": "none"#warning,
-    "error": "none"#/var/log/xray/error.log,
+    "loglevel": "none",#warning
+    "error": "none",#/var/log/xray/error.log
     "access": "none"#/var/log/xray/access.log
   },
   "api": {
